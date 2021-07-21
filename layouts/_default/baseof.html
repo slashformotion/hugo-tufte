@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="{{ .Site.LanguageCode }}">
+    {{- partial "header.html" . -}}
+
+    <body >
+        {{ block "main" . }}{{ end }}
+
+        <script>
+            feather.replace()
+        </script>
+    </body>
+
+</html>

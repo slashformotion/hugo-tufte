@@ -1,9 +1,7 @@
-contentdir = "content"
-layoutdir = "layouts"
-publishdir = "public"
-builddrafts = true 
+themesDir = "../../"
+
 canonifyurls = true
-baseurl = "https://github.com/shawnohare/hugo-tufte"
+# baseurl = "https://github.com/shawnohare/hugo-tufte"
 theme = "hugo-tufte"
 title = "Hugo-tufte Theme Example Site"
 
@@ -14,9 +12,11 @@ title = "Hugo-tufte Theme Example Site"
   tag = "tags"
 
 [params]
+  math = true
   subtitle = "Subtitle goes here."
   copyrightHolder = "Copyright Holder"
   showPoweredBy = true
+  hidedate = false
 
 # -----------------------------------------------------------------------
 # Navigation menu 
@@ -55,3 +55,9 @@ title = "Hugo-tufte Theme Example Site"
   weight = -90 
   identifier = "twitter"
   url = "https://twitter.com"
+
+
+
+[markup]
+  [markup.goldmark]
+      unsafe = false

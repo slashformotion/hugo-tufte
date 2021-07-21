@@ -5,25 +5,20 @@ Hugo-Tufte is a minimalist blog-like theme for the
 [static site generator Hugo](https://gohugo.io) that
 attempts to be a faithful implementation of the
 [Tufte-css](https://github.com/edwardtufte/tufte-css) project.
-It supports mathematical typesetting via [MathJax](https://www.mathjax.org).
+It supports mathematical typesetting via [katex](https://katex.org/).
 By utilizing copious partial templates the theme is largely customizable.
 
 ## State of Project
 
-This theme is largely unmaintained. If there is a particular fork
-that should be considered the primary project please submit a PR
-updating the README, thanks!
+This is a fork of the original [hugo-tufte](https://github.com/shawnohare/hugo-tufte);
 
 ## Math
 
-Mathjax renders LaTeX written inside of markdown files.  LaTeX can be
-written more or less as normal, but inline and display environments that
-start with `\` must be escaped.  Some examples:
+[katex](https://katex.org/) renders LaTeX written inside of markdown files.  LaTeX can be
+written more or less as normal.  Some examples:
 
-- `This $\LaTeX$ will be rendered inline.`
-- `This \\(\LaTeX\\) will be rendered inline.`
-- `A simple displayed equation: $$f(x, y) := e^{x^2 - y^2}.$$`
-- `A simple displayed equation: \\[f(x, y) := e^{x^2 - y^2}.\\]`
+- This `\\( \frac{1}{2} \\)` will be rendered inline.
+- A simple displayed equation: `$$f(x, y) := e^{x^2 - y^2}.$$`
 
 There currently seems to be some weirdness with other environments,
 such as the `align` environment.  These environments will render provided
@@ -78,9 +73,9 @@ support all the features present in the
   - **Usage**: Accepts the named parameters `cite` and `footer`.
   - **Example**:
   ```html
-  {{% blockquote cite="www.shawnohare.com" footer="Shawn" %}}
+  {{< blockquote cite="www.shawnohare.com" footer="Shawn" >}}
     There is nothing more beautiful than an elegant mathematical proof.
-  {{% /blockquote %}}`
+  {{< /blockquote >}}
   ```
 
 - `div`
@@ -103,17 +98,20 @@ support all the features present in the
   styled epigraph will be used if the `type` parameter is set to `compact`.
   - **Example**:
   ```
-  {{% epigraph pre="Author Writer, " cite="Math is Fun" %}}
+  {{< epigraph pre="Author Writer, " cite="Math is Fun" >}}
   This is an example of an epigraph with some math
   \\( \mathbb N \subseteq \mathbb R \\)
   to start the beginning of a section.
-  {{% /epigraph %}}
+  {{< /epigraph >}}
   ```
 
 - `marginnote`
   - **Description**: Wrap text to produce a numberless margin note.
-  - Usage: `{{% marginnote %}}...{{% /marginnote %}}`
-  - **Example**: `{{% marginnote %}}Some marginnote{{% /marginnote%}}`
+  - Usage: `{{< marginnote >}}...{{< /marginnote >}}`
+  - **Example**: 
+  ```html
+  {{< marginnote >}}Some marginnote{{< /marginnote>}}
+  ```
 
 - `section`
    - **Description**: This shortcode is provided as a work-around for wrapping
@@ -130,11 +128,14 @@ support all the features present in the
 - `sidenote`
   - **Description**: Wrap text to produce an automatically numbered sidenote.
   - **Usage**: identical to `marginnote`
-  `{{% sidenote %}}...{{% /sidenote %}}`
-  - **Example**: `{{% sidenote %}}Some sidenote{{% /sidenote %}}`
+  `{{< sidenote >}}...{{< /sidenote >}}`
+  - **Example**: 
+  ```html
+  {{< sidenote >}}Some sidenote{{< /sidenote >}}
+  ```
 
 
-## Templates
-TODO
-- [ ] Describe the role of each template file, as commenting within the files
-      themselves seems to break the templates.
+
+#### TODO
+- [ ] Describe the role of each template file. Commenting in template files works.
+- [ ] Fix the F**ing css

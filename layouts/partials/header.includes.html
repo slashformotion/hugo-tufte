@@ -1,6 +1,6 @@
-<!-- Load MathJax, if necessary. -->
+<!-- Load Katex, if necessary. -->
 {{ if or .Params.math .IsHome }}
-  {{ partial "math.html" . }}
+    {{ partial "math.html" . }}
 {{ end }}
 
 <!-- Syntax highlighting -->
@@ -23,6 +23,7 @@
 <!-- Font Awesome -->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 
+<script defer src="{{ "/js/main.js" | absURL }}"></script>
 <!-- Main CSS file based on Pure blog layout -->
 <link rel="stylesheet" href="{{ "/css/tufte.css" | absURL }}">
 <link rel="stylesheet" href="{{ "/css/hugo-tufte.css" | absURL }}">

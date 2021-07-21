@@ -6,7 +6,7 @@ math = true
 title = "Hugo-Tufte Features"
 subtitle = "Fancy Subtitle"
 toc = true
-categories = ["mathjax", "latex", "tufte-css"]
+categories = ["katex", "latex", "tufte-css"]
 
 
 +++
@@ -16,23 +16,24 @@ of this theme.  One of them is \\( \LaTeX \\) via MathJax.
 {{< section "begin" >}}
 ## A Bit About Mathematics
 
-{{% epigraph pre="Shawn O'Hare, " cite="Math is Fun" %}}
+{{< epigraph pre="Shawn O'Hare, " cite="Math is Fun" >}}
 This is an example of an epigraph with some math
 \\(\mathbb N \subseteq \mathbb R \\)
 to start the beginning of a section.
-{{% /epigraph %}}
+{{< /epigraph >}}
 
 <!--more-->
 
 ### Inline
 Some inline math:
-{{% marginnote "mn-example" %}}This is a margin note.{{% /marginnote %}}
-$e^{i \pi} = -1$ and \\(\sqrt{-1} = i \\)
+{{< marginnote "mn-example" >}}This is a margin note.{{< /marginnote >}}
+\\(e^{i \pi} = -1\\)
+ and \\(\sqrt{-1} = i \\)
 and \\( a_2 = 3 \\).
 
 ### Display
 And display math using escaped brackets `\\[`:
-{{% sidenote "sn-example" %}}This is a sidenote!{{% /sidenote %}}
+{{< sidenote "sn-example" >}}This is a sidenote!{{< /sidenote >}}
 \\[
   -- \cdot_H -- \colon B(G,H) \times B(H, K) \to B(G, K), \quad ([X], [Y]) \mapsto [X \times_H Y].
 \\]
@@ -73,7 +74,7 @@ is produced from
 Some blockquotes.  But first, we try to manually cite via
 <cite>This is between cite tags and has math: \\(e^x \\)</cite>
 
-{{% blockquote cite="www.shawnohare.com" footer="Shawn O'Hare" %}}
+{{< blockquote cite="www.shawnohare.com" footer="Shawn O'Hare" >}}
 This is a blockquote with two paragraphs, that employs the
 theme's `blockquote` shortcode. Lorem ipsum dolor sit amet,
 consectetuer adipiscing elit. Aliquam hendrerit mi posuere lectus.
@@ -82,7 +83,7 @@ Vestibulum enim wisi, viverra nec, fringilla in, laoreet vitae, risus.
 Donec sit amet nisl. Aliquam semper ipsum sit amet velit. Suspendisse
 id sem consectetuer libero luctus adipiscing.
 Vestibulum enim wisi, viverra nec, fringilla in, laoreet vitae, risus.
-{{% /blockquote %}}
+{{< /blockquote >}}
 
 ### New thoughts
 
