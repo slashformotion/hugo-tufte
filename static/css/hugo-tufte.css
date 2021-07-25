@@ -4,6 +4,8 @@
 /* accomodate a blog-like site. */
 /* ------------------------------------------------------------------------ */
 
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@351&display=swap');
+
 /* When setting the primary font stack, apply it to the Pure grid units along */
 /* with `html`, `button`, `input`, `select`, and `textarea`. Pure Grids use */
 /* specific font stacks to ensure the greatest OS/browser compatibility. */
@@ -18,16 +20,27 @@ html, button, input, select, textarea, p, nav, section, article, header, footer,
 }*/
 
 code {
-    font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace;
+    font-family: "Fira Code", Consolas, "Liberation Mono", Menlo, Courier, monospace;
     font-size: 1.125rem;
     line-height: 1.6;
 }
 
+div.highlight{
+    /* width: 52.5%; */
+}
+/* blockquote {
+    width: 52.5%;
+
+} */
+div.highlight::hover{
+    width: 100%;
+}
+
 pre code {
     width: 52.5%;
-    font-size: 1.2rem;
-    padding-left: 2.5%;
     display: block;
+    font-size: 1rem;
+    padding-left: 2.5%;
     overflow-x: scroll;
 }
 
@@ -187,7 +200,22 @@ h1.content-title a:focus {
 }
 
 table {
+    margin-top: 1em;
     font-size: 1.4rem;
+    width: auto;  /* making booktabs style tables the unstyled default in case someone uses Markdown styling */
+    /* margin: 0 auto; */
+    /* border-spacing: 0px; */
+    border-top: 2px solid #111;
+    border-bottom: 2px solid #111; 
+}
+
+th, td{ 
+    font-size: 1.25rem;
+    line-height: 1.71428571;  
+}
+
+td {
+    padding-right: 0.75em;
 }
 
 /* Footer, but with a different name to avoid conflicts with tufte.css */
@@ -259,27 +287,3 @@ details summary.year {
 details[open] summary {
 }
 
-
-
-/* ------------------------------------------------------------------------ */
-/*  MathJax styling
-/* ------------------------------------------------------------------------ */
-.MathJax {
-    font: inherit;
-    color: inherit;
-    font-size: 100%;
-    background: inherit;
-    border: inherit;
-}
-
-.MathJax_Display {
-    font: inherit;
-    color: inherit;
-    font-size: 100%;
-    background: inherit;
-    border: inherit;
-    padding-bottom: 1rem;
-    /* max-width: 45rem; */
-    overflow-x: auto;
-    overflow-y: auto;
-}
