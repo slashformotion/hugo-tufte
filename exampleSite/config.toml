@@ -4,7 +4,7 @@ canonifyurls = true
 # baseurl = "https://github.com/shawnohare/hugo-tufte"
 theme = "hugo-tufte"
 title = "Hugo-tufte Theme Example Site"
-
+pygmentsUseClasses=true
 [taxonomies]
   category = "categories" 
   group = "groups"
@@ -39,6 +39,12 @@ title = "Hugo-tufte Theme Example Site"
   weight = -90 
   identifier = "categories"
   url = "/categories"
+[[menu.nav]]
+  name = "About"
+  pre = "<i class='fa fa-info-circle  fa-lg'></i> "
+  weight = -80 
+  identifier = "about"
+  url = "/about"
 
 # -----------------------------------------------------------------------
 # Footer menu 
@@ -60,4 +66,5 @@ title = "Hugo-tufte Theme Example Site"
 
 [markup]
   [markup.goldmark]
-      unsafe = false
+    [markup.goldmark.renderer]
+      unsafe = true
