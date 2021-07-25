@@ -12,13 +12,13 @@ categories = ["katex", "latex", "tufte-css"]
 +++
 
 This is a quick demonstration post.  It serves as an example of the features
-of this theme.  One of them is \\( \LaTeX \\) via MathJax. 
+of this theme.  One of them is \\( \LaTeX \\) via [Katex](https://katex.org/). 
 {{< section "begin" >}}
 ## A Bit About Mathematics
 
 {{< epigraph pre="Shawn O'Hare, " cite="Math is Fun" >}}
 This is an example of an epigraph with some math
-\\(\mathbb N \subseteq \mathbb R \\)
+\\( \mathbb N \subseteq \mathbb R \\)
 to start the beginning of a section.
 {{< /epigraph >}}
 
@@ -40,33 +40,38 @@ And display math using escaped brackets `\\[`:
 
 ### Environments
 
-Currently, certain $\LaTeX$ environments need to be escaped so that
-the markdown processor does not override MathJax.  Currently, display
+Currently, certain \\(\LaTeX\\) environments need to be escaped so that
+the markdown processor does not override Katex.  Currently, display
 environments should be enclosed in `<p>` tags and blank lines.
 For instance:
 
 <p>
-\begin{align*}  
+$$
+\begin{aligned}  
   \mu(A) &= \iint_{I^2} \chi_A (x,y) \ d(x,y) 
   = \int_I \left( \int_I  \chi_A (x,y) \ dx\right) dy 
   = \int_I 0 \ dy= 0 \quad \text{and} \\  
   \mu(A) &=\iint_{I^2}  \chi_A (x,y) \ d(x,y) 
   = \int_I \left(  \int_I \chi_A (x,y) \ dy \right) dx 
   =\int_I dx = 1,
-\end{align*} 
+\end{aligned} 
+$$
 </p>
+<!-- See https://github.com/jgm/pandoc/issues/3953#issuecomment-334670625 -->
 
 is produced from
 ```
 <p>
-\begin{align*}  
+$$
+\begin{aligned}  
   \mu(A) &= \iint_{I^2} \chi_A (x,y) \ d(x,y) 
   = \int_I \left( \int_I  \chi_A (x,y) \ dx\right) dy 
   = \int_I 0 \ dy= 0 \quad \text{and} \\  
   \mu(A) &=\iint_{I^2}  \chi_A (x,y) \ d(x,y) 
   = \int_I \left(  \int_I \chi_A (x,y) \ dy \right) dx 
   =\int_I dx = 1,
-\end{align*} 
+\end{aligned} 
+$$
 </p>
 ```
 
@@ -125,7 +130,8 @@ Below we have an example of a regular width figure.
  >}}
 {{< section "end" >}}
 
-And now we exhibit a margin figure.
+
+
 {{< figure
   src="https://edwardtufte.github.io/tufte-css/img/rhino.png"
   class="class param"
@@ -135,10 +141,11 @@ And now we exhibit a margin figure.
   label="mn-export-import"
   caption="This is the image caption."
   attr="Image attribution"
-  attrlink="attribute link"
+  attrlink="https://edwardtufte.github.io/tufte-css"
   alt="alt"
   link="link"
  >}}
+ But tight integration of graphics with text is central to Tufte’s work even when those graphics are ancillary to the main body of a text. In many of those cases, a margin figure may be most appropriate.
 {{< section "end" >}}
 
 Below is a full-width figure.
