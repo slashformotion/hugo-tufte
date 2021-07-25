@@ -10,9 +10,13 @@ By utilizing copious partial templates the theme is largely customizable.
 
 ## State of Project
 
-This is a fork of the original [hugo-tufte](https://github.com/shawnohare/hugo-tufte);
+This is a fork of the original [hugo-tufte](https://github.com/shawnohare/hugo-tufte). 
 
-## Math
+
+
+## Features
+
+### Math
 
 [katex](https://katex.org/) renders LaTeX written inside of markdown files.  LaTeX can be
 written more or less as normal.  Some examples:
@@ -21,7 +25,7 @@ written more or less as normal.  Some examples:
 - A simple displayed equation: `$$f(x, y) := e^{x^2 - y^2}.$$`
 
 There currently seems to be some weirdness with other environments,
-such as the `align` environment.  These environments will render provided
+such as the `aligned` environment (`align*` is not supported by katex).  These environments will render provided
 they are wrapped in `<p>` tags and blank lines.  The snippet below should
 render correctly.
 ```
@@ -40,7 +44,7 @@ an involution, hence for any $x$, $y$ in $G$ we have:
 establishing that $G$ is abelian.
 ```
 
-## Site Parameters
+### Site Parameters
 
 The site specific parameters that this theme recognizes are:
 
@@ -49,7 +53,7 @@ The site specific parameters that this theme recognizes are:
 - `copyrightHolder` string: Inserts the value in the default copyright notice.
 - `copyright` string: Custom copyright notice.
 
-## Page Parameters
+### Page Parameters
 
 - `hideDate` boolean: if true, do not display a page date.  When `meta` is set to
   true, `hideDate` takes greater precedence.
@@ -61,7 +65,7 @@ The site specific parameters that this theme recognizes are:
   (i.e., pages of type "post") ignore this parameter.
 - `toc` boolean: if true, display the table of contents for the page.
 
-## Shortcodes
+### Shortcodes
 
 This theme provides the following shortcodes in an attempt to completely
 support all the features present in the
@@ -97,7 +101,7 @@ support all the features present in the
   make no styling assumptions, so spacing is important.  A more compactly
   styled epigraph will be used if the `type` parameter is set to `compact`.
   - **Example**:
-  ```
+  ```html
   {{< epigraph pre="Author Writer, " cite="Math is Fun" >}}
   This is an example of an epigraph with some math
   \\( \mathbb N \subseteq \mathbb R \\)
@@ -134,8 +138,3 @@ support all the features present in the
   {{< sidenote >}}Some sidenote{{< /sidenote >}}
   ```
 
-
-
-#### TODO
-- [ ] Describe the role of each template file. Commenting in template files works.
-- [ ] Fix the F**ing css
