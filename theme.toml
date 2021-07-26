@@ -5,7 +5,7 @@ description = "A minimalist blog theme using Tufte-css."
 homepage = "http://github.com/shawnohare/hugo-tufte"
 tags = ["blog", "tufte", "minimal"]
 features = ["math", "tufte-css", "tufte"]
-min_version = 0.15
+min_version = 0.85
 
 [author]
   name = "Shawn O'Hare"
