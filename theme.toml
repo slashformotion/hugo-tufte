@@ -11,7 +11,3 @@ authors = [
   {name = "Shawn O'Hare", homepage = "http://www.shawnohare.com"},
   {name = "Slashformotion", homepage = "https://github.com/slashformotiongithub"}
 ]
-
-[author]
-  name = "Shawn O'Hare"
-  homepage = "http://www.shawnohare.com"
