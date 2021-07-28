@@ -1,5 +1,5 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>tufte-css on Hugo-tufte Theme Example Site</title><link>/categories/tufte-css/</link><description>Recent content in tufte-css on Hugo-tufte Theme Example Site</description><generator>Hugo -- gohugo.io</generator><lastBuildDate>Tue, 20 Jul 2021 13:56:01 -0800</lastBuildDate><atom:link href="/categories/tufte-css/index.xml" rel="self" type="application/rss+xml"/><item><title>More math \(\xi_{(even-in-the-title-!)}\)</title><link>/post/more-maths/</link><pubDate>Tue, 20 Jul 2021 13:56:01 -0800</pubDate><guid>/post/more-maths/</guid><description>&lt;p>A compilation of \(\LaTeX\) formulas&amp;hellip;&lt;/p></description></item><item><title>Hugo-Tufte Features</title><link>/post/tufte-features/</link><pubDate>Sat, 20 Feb 2016 13:56:01 -0800</pubDate><guid>/post/tufte-features/</guid><description>&lt;p>This is a quick demonstration post. It serves as an example of the features
-of this theme. One of them is \( \LaTeX \) via &lt;a href="https://katex.org/">Katex&lt;/a>.
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>tufte-css on Hugo-tufte Theme Example Site</title><link>/categories/tufte-css/</link><description>Recent content in tufte-css on Hugo-tufte Theme Example Site</description><generator>Hugo -- gohugo.io</generator><lastBuildDate>Tue, 20 Jul 2021 13:56:01 -0800</lastBuildDate><atom:link href="/categories/tufte-css/index.xml" rel="self" type="application/rss+xml"/><item><title>More math $\xi_{(even-in-the-title-!)}$</title><link>/post/more-maths/</link><pubDate>Tue, 20 Jul 2021 13:56:01 -0800</pubDate><guid>/post/more-maths/</guid><description>&lt;p>A compilation of $\LaTeX$ formulas&amp;hellip;&lt;/p></description></item><item><title>Hugo-Tufte Features</title><link>/post/tufte-features/</link><pubDate>Sat, 20 Feb 2016 13:56:01 -0800</pubDate><guid>/post/tufte-features/</guid><description>&lt;p>This is a quick demonstration post. It serves as an example of the features
+of this theme. One of them is $ \LaTeX $ via &lt;a href="https://katex.org/">Katex&lt;/a>.
 &lt;section>
 &lt;/p>
 &lt;h2 id="a-bit-about-mathematics">A Bit About Mathematics&lt;/h2>
@@ -7,7 +7,7 @@ of this theme. One of them is \( \LaTeX \) via &lt;a href="https://katex.org/">K
 &lt;blockquote>
 &lt;p>
 This is an example of an epigraph with some math
-\\( \mathbb N \subseteq \mathbb R \\)
+$ \mathbb N \subseteq \mathbb R $
 to start the beginning of a section.
 &lt;/p>
 &lt;footer>
