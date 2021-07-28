@@ -12,13 +12,13 @@ categories = ["katex", "latex", "tufte-css"]
 +++
 
 This is a quick demonstration post.  It serves as an example of the features
-of this theme.  One of them is \\( \LaTeX \\) via [Katex](https://katex.org/). 
+of this theme.  One of them is $ \LaTeX $ via [Katex](https://katex.org/). 
 {{< section "begin" >}}
 ## A Bit About Mathematics
 
 {{< epigraph pre="Shawn O'Hare, " cite="Math is Fun" >}}
 This is an example of an epigraph with some math
-\\( \mathbb N \subseteq \mathbb R \\)
+$ \mathbb N \subseteq \mathbb R $
 to start the beginning of a section.
 {{< /epigraph >}}
 
@@ -27,20 +27,20 @@ to start the beginning of a section.
 ### Inline
 Some inline math:
 {{< marginnote "mn-example" >}}This is a margin note.{{< /marginnote >}}
-\\(e^{i \pi} = -1\\)
- and \\(\sqrt{-1} = i \\)
-and \\( a_2 = 3 \\).
+$e^{i \pi} = -1$
+ and $\sqrt{-1} = i $
+and $ a_2 = 3 $.
 
 ### Display
-And display math using escaped brackets `\\[`:
+And display math using this symbol `$$`:
 {{< sidenote "sn-example" >}}This is a sidenote!{{< /sidenote >}}
-\\[
+$$
   -- \cdot_H -- \colon B(G,H) \times B(H, K) \to B(G, K), \quad ([X], [Y]) \mapsto [X \times_H Y].
-\\]
+$$
 
 ### Environments
 
-Currently, certain \\(\LaTeX\\) environments need to be escaped so that
+Currently, certain $\LaTeX$ environments need to be escaped so that
 the markdown processor does not override Katex.  Currently, display
 environments should be enclosed in `<p>` tags and blank lines.
 For instance:
@@ -77,7 +77,7 @@ $$
 
 ### Blockquotes
 Some blockquotes.  But first, we try to manually cite via
-<cite>This is between cite tags and has math: \\(e^x \\)</cite>
+<cite>This is between cite tags and has math: $e^x $</cite>
 
 {{< blockquote cite="www.shawnohare.com" footer="Shawn O'Hare" >}}
 This is a blockquote with two paragraphs, that employs the

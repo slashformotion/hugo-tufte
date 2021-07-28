@@ -4,12 +4,12 @@ meta = false
 author = "AUTHOR NAME"
 date = "2021-07-20T13:56:01-08:00"
 type = "post"
-title = "More math \\(\\xi_{(even-in-the-title-!)}\\)"
+title = "More math $\\xi_{(even-in-the-title-!)}$"
 subtitle = "Wow this really works ! "
 toc = true
 categories = ["katex", "latex", "tufte-css"]
 +++
-A compilation of \\(\LaTeX\\) formulas...
+A compilation of $\LaTeX$ formulas...
 <!--more-->
 
 ## Matrix 

@@ -21,7 +21,7 @@ This is a fork of the original [hugo-tufte](https://github.com/shawnohare/hugo-t
 [katex](https://katex.org/) renders LaTeX written inside of markdown files.  LaTeX can be
 written more or less as normal.  Some examples:
 
-- This `\\( \frac{1}{2} \\)` will be rendered inline.
+- This `$ \frac{1}{2} $` will be rendered inline.
 - A simple displayed equation: `$$f(x, y) := e^{x^2 - y^2}.$$`
 
 There currently seems to be some weirdness with other environments,
@@ -33,12 +33,12 @@ Let $G$ be a finite group with exponent $2$.  Then every element is
 an involution, hence for any $x$, $y$ in $G$ we have:
 
 <p>
-\begin{align*}
+\begin{aligned}
   e &= (xy)^2  \\
   &=xyxy \implies \\
   y^{-1} &= xyx \implies \\
   y^{-1}x^{-1} &= xy,
-\end{align*}
+\end{aligned*}
 </p>
 
 establishing that $G$ is abelian.
@@ -104,7 +104,7 @@ support all the features present in the
   ```html
   {{< epigraph pre="Author Writer, " cite="Math is Fun" >}}
   This is an example of an epigraph with some math
-  \\( \mathbb N \subseteq \mathbb R \\)
+  $ \mathbb N \subseteq \mathbb R $
   to start the beginning of a section.
   {{< /epigraph >}}
   ```
