@@ -1,7 +1,7 @@
 themesDir = "../../"
 
 canonifyurls = true
-# baseurl = "https://github.com/shawnohare/hugo-tufte"
+baseurl = "https://slashformotion.github.io/hugo-tufte/"
 theme = "hugo-tufte"
 title = "Hugo-tufte Theme Example Site"
 pygmentsUseClasses=true
