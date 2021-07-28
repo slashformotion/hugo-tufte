@@ -7,7 +7,10 @@ on:
 
 jobs:
   deploy:
-    runs-on: ubuntu-18.04
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: ./exampleSite
     steps:
       - uses: actions/checkout@v2
         with:
@@ -25,7 +28,6 @@ jobs:
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
-        if: github.ref == 'refs/heads/master'
         with:
           github_token: ${{ secrets.GH_TOKEN }}
-          publish_dir: ./public
+          publish_dir: ./exampleSite/public
