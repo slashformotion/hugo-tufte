@@ -3,6 +3,7 @@ license = "MIT"
 licenselink = "https://github.com/shawnohare/hugo-tufte/blob/master/LICENSE.md"
 description = "A minimalist blog theme using Tufte-css."
 homepage = "http://github.com/shawnohare/hugo-tufte"
+demo = "https://slashformotion.github.io/hugo-tufte/"
 tags = ["blog", "tufte", "minimal"]
 features = ["math", "tufte-css", "tufte"]
 min_version = 0.84
