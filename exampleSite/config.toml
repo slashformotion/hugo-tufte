@@ -54,7 +54,7 @@ pygmentsUseClasses=true
   pre = "<i class='fa fa-github fa-2x'></i> "
   weight = -100 
   identifier = "github"
-  url = "https://github.com/shawnohare/hugo-tufte"
+  url = "https://github.com/slashformotion/hugo-tufte"
 [[menu.footer]]
   name = ""
   pre = "<i class='fa fa-twitter fa-2x'></i> "
