@@ -5,7 +5,7 @@ Hugo-Tufte is a minimalist blog-like theme for the
 [static site generator Hugo](https://gohugo.io) that
 attempts to be a faithful implementation of the
 [Tufte-css](https://github.com/edwardtufte/tufte-css) project.
-It supports mathematical typesetting via [katex](https://katex.org/).
+It supports mathematical typesetting via [katex](https://katex.org/) or [MathJax](https://www.mathjax.org).
 By utilizing copious partial templates the theme is largely customizable.
 
 ## State of Project
@@ -18,10 +18,9 @@ This is a fork of the original [hugo-tufte](https://github.com/shawnohare/hugo-t
 
 ### Math
 
-[katex](https://katex.org/) renders LaTeX written inside of markdown files.  LaTeX can be
-written more or less as normal.  Some examples:
+[Katex](https://katex.org/) or [MathJax](https://www.mathjax.org) renders LaTeX written inside of markdown files. LaTeX can be written more or less as normal. Some examples:
 
-- This `$ \frac{1}{2} $` will be rendered inline.
+- This `$\frac{1}{2}$` will be rendered inline.
 - A simple displayed equation: `$$f(x, y) := e^{x^2 - y^2}.$$`
 
 There currently seems to be some weirdness with other environments,
@@ -38,7 +37,7 @@ an involution, hence for any $x$, $y$ in $G$ we have:
   &=xyxy \implies \\
   y^{-1} &= xyx \implies \\
   y^{-1}x^{-1} &= xy,
-\end{aligned*}
+\end{aligned}
 </p>
 
 establishing that $G$ is abelian.
@@ -52,6 +51,8 @@ The site specific parameters that this theme recognizes are:
 - `showPoweredBy` boolean: if true, display a shoutout to Hugo and this theme.
 - `copyrightHolder` string: Inserts the value in the default copyright notice.
 - `copyright` string: Custom copyright notice.
+- `math` boolean: Site wide kill switch for Latex support
+- `katex` boolean: if "katex" is set to true katex will be used to render LaTex, if not MathJax will be used instead
 
 ### Page Parameters
 
