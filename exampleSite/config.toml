@@ -1,23 +1,32 @@
+# Remove this if your site folder is not inside the theme folder
 themesDir = "../../"
 
-canonifyurls = true
-baseurl = "https://slashformotion.github.io/hugo-tufte/"
+# Set your theme here
 theme = "hugo-tufte"
+# The url of your website
+baseurl = "https://slashformotion.github.io/hugo-tufte/"
+# The title of your website (shown on all the pages)
 title = "Hugo-tufte Theme Example Site"
-pygmentsUseClasses=true
-[taxonomies]
-  category = "categories" 
-  group = "groups"
-  series = "series"
-  tag = "tags"
+# Site wide kill switch for Latex support
+math = true
+# (If math is enabled) 
+## if "katex" is set to true katex will be used to render LaTex, if not MathJax will be used instead
+katex = false
 
 [params]
-  math = true
+  # Subtitle of the website
   subtitle = "Subtitle goes here."
+  # Your name or the name of you company
   copyrightHolder = "Copyright Holder"
+  # Show the "Powered by Hugo-Tufte and Hugo." 
   showPoweredBy = true
+  # Site wide kill switch
   hidedate = false
 
+[taxonomies]
+  category = "categories"
+  series = "series"
+  tag = "tags"
 # -----------------------------------------------------------------------
 # Navigation menu 
 # -----------------------------------------------------------------------
@@ -63,8 +72,11 @@ pygmentsUseClasses=true
   url = "https://twitter.com"
 
 
-
+# Don't change the settings below
 [markup]
   [markup.goldmark]
     [markup.goldmark.renderer]
-      unsafe = true
+      unsafe = true # make the shortcodes work
+
+pygmentsUseClasses=true
+canonifyurls = true
