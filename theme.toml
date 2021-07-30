@@ -1,8 +1,8 @@
 name = "Tufte"
 license = "MIT"
-licenselink = "https://github.com/shawnohare/hugo-tufte/blob/master/LICENSE.md"
+licenselink = "https://github.com/slashformotion/hugo-tufte/blob/master/LICENSE.md"
 description = "A minimalist blog theme using Tufte-css."
-homepage = "http://github.com/shawnohare/hugo-tufte"
+homepage = "http://github.com/slashformotion/hugo-tufte"
 demo = "https://slashformotion.github.io/hugo-tufte/"
 tags = ["blog", "tufte", "minimal"]
 features = ["math", "tufte-css", "tufte"]
@@ -10,5 +10,5 @@ min_version = 0.84
 
 authors = [
   {name = "Shawn O'Hare", homepage = "http://www.shawnohare.com"},
-  {name = "Slashformotion", homepage = "https://github.com/slashformotiongithub"}
+  {name = "Slashformotion", homepage = "https://github.com/slashformotion"}
 ]
