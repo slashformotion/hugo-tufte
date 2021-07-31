@@ -1,6 +1,6 @@
 <header class="brand">
-  <h1>{{ .Site.Title}}</h1>
+  <a href="{{.Site.Params.baseurl }}"><h1>{{ .Site.Title}}</h1></a>
   <h2>{{ .Site.Params.subtitle }}</h2>
   {{ partial "nav.html" . }}
-  <hr>
+  <hr />
 </header>
