@@ -1,7 +1,13 @@
-{{ partial "header.html" . }}
-<section id="main">
-  <div>
-   <h1 id="title">{{ .Title }}</h1>
+{{ define "main" }}
+truc
+  <div id="layout" class="pure-g">
+    <article class="pure-u-1">
+      {{ partial "brand.html" . }}
+      
+      <section><h1 id="title">{{ .Title }}</h1></section>
+      <section>
+        {{ partial "footer.html" . }}
+      </section>
+    </article>
   </div>
-</section>
-{{ partial "footer.html" . }}
+{{ end }}
