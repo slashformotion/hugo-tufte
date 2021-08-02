@@ -78,8 +78,6 @@ katex = false
     [markup.goldmark.renderer]
       unsafe = true # make the shortcodes work
   [markup.highlight]
-    anchorLineNos = true
-    style = "github"
+      noClasses = false
 
-pygmentsUseClasses=true
 canonifyurls = true

@@ -31,6 +31,10 @@ code {
     overflow-x: scroll;
 }
 
+.highlight .lntable {
+    overflow: initial;
+}
+
 .highlight div:first-of-type {
     padding: 0 .8em 0 0;
 }
