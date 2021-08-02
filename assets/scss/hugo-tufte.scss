@@ -13,8 +13,6 @@ html, button, input, select, textarea, p, nav, section, article, header, footer,
     font-family: "et-book", -apple-system, "San Francisco", "Segoe UI","Roboto","Oxygen","Ubuntu","Cantarell","Open Sans","Helvetica Neue", "Lucida Grand", sans-serif;
 }
 
-
-
 p {
     text-align: justify;
 }
@@ -25,18 +23,49 @@ code {
     line-height: 1.6;
 }
 
-
+$ht-code-border-radius: .4em;
 .highlight {
     width: 55%;
     overflow-x: scroll;
+    border-radius: $ht-code-border-radius;
+    
+    &>div.chroma>table.lntable{
+        margin: $ht-code-border-radius 0 $ht-code-border-radius 0;
+        & td:first-of-type {
+            & span:not(& span>span) {
+                padding: 0 .75em 0 .5em;
+            }
+        }
+    }
+    &>.chroma>code {
+
+        width: max-content;
+        margin-top: .5em;
+        margin-bottom: .5em;
+        margin-left: .5em;
+        &>span.hl{
+            margin-left: -.5em;
+            padding-left: .5em;
+        }
+    }
+
+    .chroma .hl {
+        // border-radius: $ht-code-border-radius / 2;
+        display: block;
+    }
+    
+    &::-webkit-scrollbar {
+        border-radius: $ht-code-border-radius;
+        width: 10px;
+        height: 1rem;
+    }
+    &::-webkit-scrollbar-thumb {
+        border-radius: $ht-code-border-radius;
+    }
 }
 
 .highlight .lntable {
     overflow: initial;
-}
-
-.highlight div:first-of-type {
-    padding: 0 .8em 0 0;
 }
 
 .highlight pre {
@@ -157,16 +186,19 @@ h1.content-title a:focus {
 /* ------------------------------------------------------------------------ */
  /* Styling for listing pages. */
 /* ------------------------------------------------------------------------ */
-.list-page ul {
-    list-style-type: none;
-    margin: -0.25em;
-    width: 87.5%;
-    max-width: 45rem;
-}
-.list-page li {
+.list-page {
+    ul {
+        list-style-type: none;
+        margin: -0.25em;
+        width: 87.5%;
+        max-width: 45rem;
+    }
+    li {
     margin: 0;
     /*font-size: 95%;*/
 }
+}
+.list-page 
 .list-date {
   display: inline;
   font-size: 0.75em;
@@ -211,13 +243,22 @@ table:not(.lntable) {
     border-bottom: 2px solid #111; 
 }
 
-th, td{ 
+table:not(.lntable) th, table:not(.lntable) td{ 
     font-size: 1.25rem;
     line-height: 1.71428571;  
 }
 
-td {
+table:not(.lntable) td {
     padding-right: 0.75em;
+}
+
+table.lntable 
+{
+    td.lntd {
+        padding: 0em;
+    }
+    border-spacing: 0;
+    padding: 0;
 }
 
 /* Footer, but with a different name to avoid conflicts with tufte.css */

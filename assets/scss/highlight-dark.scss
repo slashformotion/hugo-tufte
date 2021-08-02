@@ -1,0 +1,12 @@
+$ht-code-bgcolor: #282a36;
+
+@import "syntax-dark.scss";
+
+.highlight {
+    &::-webkit-scrollbar {
+        background: $ht-code-bgcolor;
+    }
+    &::-webkit-scrollbar-thumb {
+        background: scale-color($ht-code-bgcolor, $lightness: 23%, $saturation: -40%);
+    }
+}

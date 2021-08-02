@@ -16,10 +16,26 @@
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 
 <script defer src="{{ "/js/main.js" | relURL }}"></script>
+
 <!-- Main CSS file based on Pure blog layout -->
-<link rel="stylesheet" href="{{ "/css/syntax.css" | relURL }}">
+{{ if .Site.Params.codeBlocksDark }}
+    {{ $codeoptions := (dict "targetPath" "/css/highlight-dark.min.css" "outputStyle" "compressed" "enableSourceMap" true) }}
+    {{ $style := resources.Get "scss/highlight-dark.scss" | resources.ToCSS $codeoptions }}
+    
+    <link rel="stylesheet" href="{{ $style.Permalink | relURL }}">
+{{ else }}
+    {{ $codeoptions := (dict "targetPath" "/css/highlight-light.min.css" "outputStyle" "compressed" "enableSourceMap" true) }}
+    {{ $codestyle := resources.Get "scss/highlight-light.scss" | resources.ToCSS $codeoptions }}
+
+    <link rel="stylesheet" href="{{ $codestyle.Permalink | relURL }}">
+{{ end }}
+
 <link rel="stylesheet" href="{{ "/css/tufte.css" | relURL }}">
-<link rel="stylesheet" href="{{ "/css/hugo-tufte.css" | relURL }}">
+
+{{ $htoptions := (dict "targetPath" "/css/hugo-tufte.min.css" "outputStyle" "compressed" "enableSourceMap" true) }}
+{{ $htstyle := resources.Get "scss/hugo-tufte.scss" | resources.ToCSS $htoptions }}
+<link rel="stylesheet" href="{{ $htstyle.Permalink | relURL }}">
+
 <link rel="stylesheet" href="{{ "/css/hugo-tufte-override.css" | relURL }}">
 
 

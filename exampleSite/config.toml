@@ -22,6 +22,8 @@ katex = false
   showPoweredBy = true
   # Site wide kill switch
   hidedate = false
+  # Uncomment for dark code blocks
+  # codeBlocksDark = true
 
 [taxonomies]
   category = "categories"
