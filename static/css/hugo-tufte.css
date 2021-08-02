@@ -201,7 +201,7 @@ h1.content-title a:focus {
     margin: 1rem;
 }
 
-table {
+table:not(.lntable) {
     margin-top: 1em;
     font-size: 1.4rem;
     width: auto;  /* making booktabs style tables the unstyled default in case someone uses Markdown styling */

@@ -80,4 +80,5 @@ katex = false
   [markup.highlight]
       noClasses = false
 
+pygmentsUseClasses = true
 canonifyurls = true
