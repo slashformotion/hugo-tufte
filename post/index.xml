@@ -13,6 +13,7 @@ to start the beginning of a section.
 &lt;footer>
 Shawn O&amp;#39;Hare,
 &lt;cite>Math is Fun&lt;/cite>
+&lt;/a>
 &lt;/footer>
 &lt;blockquote>
 &lt;/div></description></item><item><title>Hide Date</title><link>https://slashformotion.github.io/hugo-tufte/post/nodate/</link><pubDate>Fri, 15 May 2015 00:00:00 +0000</pubDate><guid>https://slashformotion.github.io/hugo-tufte/post/nodate/</guid><description>Here is an example post where the date set, but hidden from display.
