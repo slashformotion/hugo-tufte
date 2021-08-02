@@ -13,11 +13,11 @@ html, button, input, select, textarea, p, nav, section, article, header, footer,
     font-family: "et-book", -apple-system, "San Francisco", "Segoe UI","Roboto","Oxygen","Ubuntu","Cantarell","Open Sans","Helvetica Neue", "Lucida Grand", sans-serif;
 }
 
-/* Hugo code blocks are <pre><code class="language-$lang">...</code></pre> */
-/*@media screen and (max-width: 760px) {
-    pre code {
-    }
-}*/
+
+
+p {
+    text-align: justify;
+}
 
 code {
     font-family: "Fira Code", Consolas, "Liberation Mono", Menlo, Courier, monospace;
@@ -25,31 +25,29 @@ code {
     line-height: 1.6;
 }
 
-div.highlight{
-    /* width: 52.5%; */
-}
-/* blockquote {
-    width: 52.5%;
 
-} */
-div.highlight::hover{
-    width: 100%;
-}
-
-pre code {
-    width: 52.5%;
-    display: block;
-    font-size: 1rem;
-    padding-left: 2.5%;
+.highlight {
+    width: 55%;
     overflow-x: scroll;
 }
 
-/*@media (max-width: 760px) {
-    pre code {
-        width: 90%;
-        padding: 0;
-    }
- }*/
+.highlight div:first-of-type {
+    padding: 0 .8em 0 0;
+}
+
+.highlight pre {
+    margin: 0;
+}
+
+.highlight pre code {
+    display: block;
+    font-size: 1rem;
+}
+
+.sidenote, .marginnote {
+    margin-right: -55%;
+    width: 45%;
+}
 
 /* ------------------------------------------------------------------------ */
 /* Brand details, such as a sidebar or top display. */
