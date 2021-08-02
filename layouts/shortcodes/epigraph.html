@@ -5,7 +5,9 @@
 {{ if .IsNamedParams }}
 <footer>
 {{ with .Get "pre" }}{{ . }}{{ end }}
+{{ with .Get "link" }}<a href={{ . }}>{{ end }}
 {{ with .Get "cite" }}<cite>{{ . }}</cite>{{ end }}
+</a>
 {{ with .Get "post" }}{{ . }}{{ end }}
 </footer>
 {{ end }}
