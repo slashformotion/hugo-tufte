@@ -25,7 +25,7 @@ Math is Fun
 
 
 
- "><link rel=canonical href=https://slashformotion.github.io/hugo-tufte/post/tufte-features/><script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script><script id=MathJax-script async src=https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js></script><script>window.MathJax={tex:{inlineMath:[['$','$'],['\\(','\\)']]}}</script><link rel=stylesheet href=https://unpkg.com/purecss@2.0.6/build/pure-min.css><link rel=stylesheet href=https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css><script defer src=/hugo-tufte/js/main.js></script><link rel=stylesheet href=/hugo-tufte/css/tufte.css><link rel=stylesheet href=/hugo-tufte/css/hugo-tufte.css><link rel=stylesheet href=/hugo-tufte/css/hugo-tufte-override.css><link rel=stylesheet href=/hugo-tufte/css/syntax.css></head><body><div id=layout class=pure-g><article class=pure-u-1><header class=brand><a href=https://slashformotion.github.io/hugo-tufte/><h1>Hugo-tufte Theme Example Site</h1></a><h2>Subtitle goes here.</h2><nav class=menu><ul><li><a href=/hugo-tufte/><i class="fa fa-home fa-lg"></i> Home</a></li><li><a href=/hugo-tufte/post><i class="fa fa-book fa-lg"></i> Posts</a></li><li><a href=/hugo-tufte/categories><i class="fa fa-tags fa-lg"></i> Categories</a></li><li><a href=/hugo-tufte/about><i class="fa fa-info-circle fa-lg"></i> About</a></li></ul></nav><hr></header><section><h1 class=content-title><a href=/hugo-tufte/post/tufte-features/>Hugo-Tufte Features</a></h1><p class=subtitle>Fancy Subtitle</p><span class=content-meta><i class="fa fa-user">&nbsp;</i><span class=author>
+ "><link rel=canonical href=https://slashformotion.github.io/hugo-tufte/post/tufte-features/><script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script><script id=MathJax-script async src=https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js></script><script>window.MathJax={tex:{inlineMath:[['$','$'],['\\(','\\)']]}}</script><link rel=stylesheet href=https://unpkg.com/purecss@2.0.6/build/pure-min.css><link rel=stylesheet href=https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css><script defer src=/hugo-tufte/js/main.js></script><link rel=stylesheet href=/hugo-tufte/css/highlight-light.min.css><link rel=stylesheet href=/hugo-tufte/css/tufte.css><link rel=stylesheet href=/hugo-tufte/css/hugo-tufte.min.css><link rel=stylesheet href=/hugo-tufte/css/hugo-tufte-override.css></head><body><div id=layout class=pure-g><article class=pure-u-1><header class=brand><a href=https://slashformotion.github.io/hugo-tufte/><h1>Hugo-tufte Theme Example Site</h1></a><h2>Subtitle goes here.</h2><nav class=menu><ul><li><a href=/hugo-tufte/><i class="fa fa-home fa-lg"></i> Home</a></li><li><a href=/hugo-tufte/post><i class="fa fa-book fa-lg"></i> Posts</a></li><li><a href=/hugo-tufte/categories><i class="fa fa-tags fa-lg"></i> Categories</a></li><li><a href=/hugo-tufte/about><i class="fa fa-info-circle fa-lg"></i> About</a></li></ul></nav><hr></header><section><h1 class=content-title><a href=/hugo-tufte/post/tufte-features/>Hugo-Tufte Features</a></h1><p class=subtitle>Fancy Subtitle</p><span class=content-meta><i class="fa fa-user">&nbsp;</i><span class=author>
 &nbsp;AUTHOR NAME</span><br><i class="fa fa-calendar"></i>
 &nbsp;Feb 20, 2016
 &nbsp;<i class="fa fa-clock-o"></i>
@@ -58,7 +58,7 @@ For instance:</p><p>$$
 = \int_I \left( \int_I \chi_A (x,y) \ dy \right) dx
 =\int_I dx = 1,
 \end{aligned}
-$$</p><p>is produced from</p><pre><code>&lt;p&gt;
+$$</p><p>is produced from</p><div class=highlight><pre class=chroma><code class=language-txt data-lang=txt>&lt;p&gt;
 $$
 \begin{aligned}  
   \mu(A) &amp;= \iint_{I^2} \chi_A (x,y) \ d(x,y) 
@@ -70,7 +70,7 @@ $$
 \end{aligned} 
 $$
 &lt;/p&gt;
-</code></pre><h3 id=blockquotes>Blockquotes</h3><p>Some blockquotes. But first, we try to manually cite via
+</code></pre></div><h3 id=blockquotes>Blockquotes</h3><p>Some blockquotes. But first, we try to manually cite via
 <cite>This is between cite tags and has math: $e^x $</cite></p><blockquote cite=www.shawnohare.com><p>This is a blockquote with two paragraphs, that employs the
 theme's `blockquote` shortcode. Lorem ipsum dolor sit amet,
 consectetuer adipiscing elit. Aliquam hendrerit mi posuere lectus.
@@ -81,19 +81,45 @@ Vestibulum enim wisi, viverra nec, fringilla in, laoreet vitae, risus.</p><foote
 as here. There are currently two ways to create one. One way is with raw
 HTML such as: <code>&lt;span class="newthought">...&lt;/span>"</code>. The theme also provides
 the <code>newthought</code> shortcode.</p><h3 id=code>Code</h3><p>As an example of some inline code: <code>go test -v -short</code>.
-And this is some block-code:</p><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-go data-lang=go><span style=color:#f92672>package</span> <span style=color:#a6e22e>main</span>
+And this is some block-code:</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre class=chroma><code><span class=lnt>199
+</span><span class=hl><span class=lnt>200
+</span></span><span class=hl><span class=lnt>201
+</span></span><span class=hl><span class=lnt>202
+</span></span><span class=hl><span class=lnt>203
+</span></span><span class=lnt>204
+</span><span class=lnt>205
+</span><span class=lnt>206
+</span><span class=lnt>207
+</span><span class=lnt>208
+</span><span class=lnt>209
+</span><span class=lnt>210
+</span><span class=lnt>211
+</span></code></pre></td><td class=lntd><pre class=chroma><code class=language-go data-lang=go><span class=kn>package</span> <span class=nx>main</span>
+<span class=hl>
+</span><span class=hl><span class=kn>import</span> <span class=s>&#34;log&#34;</span>
+</span><span class=hl>
+</span><span class=hl><span class=kd>func</span> <span class=nf>add</span><span class=p>(</span><span class=nx>x</span> <span class=kt>int</span><span class=p>,</span> <span class=nx>y</span> <span class=kt>int</span><span class=p>)</span> <span class=kt>int</span> <span class=p>{</span>
+</span>  <span class=nx>log</span><span class=p>.</span><span class=nf>Println</span><span class=p>(</span><span class=s>&#34;We are going to take the sum of two numbers, and leave a long comment.&#34;</span><span class=p>)</span>
+  <span class=k>return</span> <span class=nx>x</span> <span class=o>+</span> <span class=nx>y</span>
+<span class=p>}</span>
 
-<span style=color:#f92672>import</span> <span style=color:#e6db74>&#34;log&#34;</span>
+<span class=kd>func</span> <span class=nf>main</span><span class=p>()</span> <span class=p>{</span>
+  <span class=nx>y</span> <span class=o>:=</span> <span class=nf>add</span><span class=p>(</span><span class=mi>1</span><span class=p>,</span> <span class=mi>2</span><span class=p>)</span>
+  <span class=nx>log</span><span class=p>.</span><span class=nf>Println</span><span class=p>(</span><span class=nx>y</span><span class=p>)</span>
+<span class=p>}</span>
+</code></pre></td></tr></table></div></div><p>Here&rsquo;s an example without line numbers.</p><div class=highlight><pre class=chroma><code class=language-go data-lang=go><span class=kn>package</span> <span class=nx>main</span>
+<span class=hl>
+</span><span class=hl><span class=kn>import</span> <span class=s>&#34;log&#34;</span>
+</span><span class=hl>
+</span><span class=hl><span class=kd>func</span> <span class=nf>add</span><span class=p>(</span><span class=nx>x</span> <span class=kt>int</span><span class=p>,</span> <span class=nx>y</span> <span class=kt>int</span><span class=p>)</span> <span class=kt>int</span> <span class=p>{</span>
+</span>  <span class=nx>log</span><span class=p>.</span><span class=nf>Println</span><span class=p>(</span><span class=s>&#34;We are going to take the sum of two numbers, and leave a very very very long comment.&#34;</span><span class=p>)</span>
+  <span class=k>return</span> <span class=nx>x</span> <span class=o>+</span> <span class=nx>y</span>
+<span class=p>}</span>
 
-<span style=color:#66d9ef>func</span> <span style=color:#a6e22e>add</span>(<span style=color:#a6e22e>x</span> <span style=color:#66d9ef>int</span>, <span style=color:#a6e22e>y</span> <span style=color:#66d9ef>int</span>) <span style=color:#66d9ef>int</span> {
-  <span style=color:#a6e22e>log</span>.<span style=color:#a6e22e>Println</span>(<span style=color:#e6db74>&#34;We are going to take the sum of two numbers, and leave a long comment.&#34;</span>)
-  <span style=color:#66d9ef>return</span> <span style=color:#a6e22e>x</span> <span style=color:#f92672>+</span> <span style=color:#a6e22e>y</span>
-}
-
-<span style=color:#66d9ef>func</span> <span style=color:#a6e22e>main</span>() {
-  <span style=color:#a6e22e>y</span> <span style=color:#f92672>:=</span> <span style=color:#a6e22e>add</span>(<span style=color:#ae81ff>1</span>, <span style=color:#ae81ff>2</span>)
-  <span style=color:#a6e22e>log</span>.<span style=color:#a6e22e>Println</span>(<span style=color:#a6e22e>y</span>)
-}
+<span class=kd>func</span> <span class=nf>main</span><span class=p>()</span> <span class=p>{</span>
+  <span class=nx>y</span> <span class=o>:=</span> <span class=nf>add</span><span class=p>(</span><span class=mi>1</span><span class=p>,</span> <span class=mi>2</span><span class=p>)</span>
+  <span class=nx>log</span><span class=p>.</span><span class=nf>Println</span><span class=p>(</span><span class=nx>y</span><span class=p>)</span>
+<span class=p>}</span>
 </code></pre></div><h3 id=figure>Figure</h3><p>Below we have an example of a regular width figure.<figure class="class param"><label for=mn-export-import class=margin-toggle>⊕</label>
 <input type=checkbox id=mn-export-import class=margin-toggle>
 <span class=marginnote><strong>The image title.</strong>
