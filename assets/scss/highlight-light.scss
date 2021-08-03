@@ -1,0 +1,12 @@
+$ht-code-bgcolor: #dde2ff;
+
+@import "syntax-light.scss";
+
+.highlight {
+    &::-webkit-scrollbar {
+        background: $ht-code-bgcolor;
+    }
+    &::-webkit-scrollbar-thumb {
+        background: scale-color($ht-code-bgcolor, $lightness: -13%, $saturation: -80%);
+    }
+}

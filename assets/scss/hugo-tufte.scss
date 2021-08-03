@@ -13,11 +13,9 @@ html, button, input, select, textarea, p, nav, section, article, header, footer,
     font-family: "et-book", -apple-system, "San Francisco", "Segoe UI","Roboto","Oxygen","Ubuntu","Cantarell","Open Sans","Helvetica Neue", "Lucida Grand", sans-serif;
 }
 
-/* Hugo code blocks are <pre><code class="language-$lang">...</code></pre> */
-/*@media screen and (max-width: 760px) {
-    pre code {
-    }
-}*/
+p {
+    text-align: justify;
+}
 
 code {
     font-family: "Fira Code", Consolas, "Liberation Mono", Menlo, Courier, monospace;
@@ -25,31 +23,64 @@ code {
     line-height: 1.6;
 }
 
-div.highlight{
-    /* width: 52.5%; */
-}
-/* blockquote {
-    width: 52.5%;
+$ht-code-border-radius: .4em;
+.highlight {
+    width: 55%;
+    overflow-x: scroll;
+    border-radius: $ht-code-border-radius;
+    
+    &>div.chroma>table.lntable{
+        margin: $ht-code-border-radius 0 $ht-code-border-radius 0;
+        & td:first-of-type {
+            & span:not(& span>span) {
+                padding: 0 .75em 0 .5em;
+            }
+        }
+    }
+    &>.chroma>code {
 
-} */
-div.highlight::hover{
-    width: 100%;
+        width: max-content;
+        margin-top: .5em;
+        margin-bottom: .5em;
+        margin-left: .5em;
+        &>span.hl{
+            margin-left: -.5em;
+            padding-left: .5em;
+        }
+    }
+
+    .chroma .hl {
+        // border-radius: $ht-code-border-radius / 2;
+        display: block;
+    }
+    
+    &::-webkit-scrollbar {
+        border-radius: $ht-code-border-radius;
+        width: 10px;
+        height: 1rem;
+    }
+    &::-webkit-scrollbar-thumb {
+        border-radius: $ht-code-border-radius;
+    }
 }
 
-pre code {
-    width: 52.5%;
+.highlight .lntable {
+    overflow: initial;
+}
+
+.highlight pre {
+    margin: 0;
+}
+
+.highlight pre code {
     display: block;
     font-size: 1rem;
-    padding-left: 2.5%;
-    overflow-x: scroll;
 }
 
-/*@media (max-width: 760px) {
-    pre code {
-        width: 90%;
-        padding: 0;
-    }
- }*/
+.sidenote, .marginnote {
+    margin-right: -55%;
+    width: 45%;
+}
 
 /* ------------------------------------------------------------------------ */
 /* Brand details, such as a sidebar or top display. */
@@ -155,16 +186,19 @@ h1.content-title a:focus {
 /* ------------------------------------------------------------------------ */
  /* Styling for listing pages. */
 /* ------------------------------------------------------------------------ */
-.list-page ul {
-    list-style-type: none;
-    margin: -0.25em;
-    width: 87.5%;
-    max-width: 45rem;
-}
-.list-page li {
+.list-page {
+    ul {
+        list-style-type: none;
+        margin: -0.25em;
+        width: 87.5%;
+        max-width: 45rem;
+    }
+    li {
     margin: 0;
     /*font-size: 95%;*/
 }
+}
+.list-page 
 .list-date {
   display: inline;
   font-size: 0.75em;
@@ -199,7 +233,7 @@ h1.content-title a:focus {
     margin: 1rem;
 }
 
-table {
+table:not(.lntable) {
     margin-top: 1em;
     font-size: 1.4rem;
     width: auto;  /* making booktabs style tables the unstyled default in case someone uses Markdown styling */
@@ -209,13 +243,22 @@ table {
     border-bottom: 2px solid #111; 
 }
 
-th, td{ 
+table:not(.lntable) th, table:not(.lntable) td{ 
     font-size: 1.25rem;
     line-height: 1.71428571;  
 }
 
-td {
+table:not(.lntable) td {
     padding-right: 0.75em;
+}
+
+table.lntable 
+{
+    td.lntd {
+        padding: 0em;
+    }
+    border-spacing: 0;
+    padding: 0;
 }
 
 /* Footer, but with a different name to avoid conflicts with tufte.css */

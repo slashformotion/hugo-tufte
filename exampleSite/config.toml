@@ -22,6 +22,8 @@ katex = false
   showPoweredBy = true
   # Site wide kill switch
   hidedate = false
+  # Uncomment for dark code blocks
+  # codeBlocksDark = true
 
 [taxonomies]
   category = "categories"
@@ -77,6 +79,8 @@ katex = false
   [markup.goldmark]
     [markup.goldmark.renderer]
       unsafe = true # make the shortcodes work
+  [markup.highlight]
+      noClasses = false
 
-pygmentsUseClasses=true
+pygmentsUseClasses = true
 canonifyurls = true

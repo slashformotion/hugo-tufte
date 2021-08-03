@@ -60,7 +60,8 @@ $$
 <!-- See https://github.com/jgm/pandoc/issues/3953#issuecomment-334670625 -->
 
 is produced from
-```
+
+```txt
 <p>
 $$
 \begin{aligned}  
@@ -100,7 +101,7 @@ the `newthought` shortcode.
 ### Code
 As an example of some inline code: `go test -v -short`.
 And this is some block-code:
-```go
+```go {linenos=table,hl_lines=["2-5"],linenostart=199}
 package main
 
 import "log"
@@ -115,6 +116,24 @@ func main() {
   log.Println(y)
 }
 ```
+
+Here's an example without line numbers. 
+```go {hl_lines=["2-5"],linenostart=199}
+package main
+
+import "log"
+
+func add(x int, y int) int {
+  log.Println("We are going to take the sum of two numbers, and leave a very very very long comment.")
+  return x + y
+}
+
+func main() {
+  y := add(1, 2)
+  log.Println(y)
+}
+```
+
 ### Figure
 Below we have an example of a regular width figure.
 {{< figure
