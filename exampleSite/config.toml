@@ -3,6 +3,8 @@ themesDir = "../../"
 
 # Set your theme here
 theme = "hugo-tufte"
+# The language of your website (see https://www.andiamo.co.uk/resources/iso-language-codes/ for reference)
+languageCode = "en-us"
 # The url of your website
 baseurl = "https://slashformotion.github.io/hugo-tufte/"
 # The title of your website (shown on all the pages)
