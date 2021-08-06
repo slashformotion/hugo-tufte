@@ -13,12 +13,12 @@
 <!-- <link href='//fonts.googleapis.com/css?family=Raleway:400,200,100,700,300,500,600,800' rel='stylesheet' type='text/css'> -->
 
 <!-- Font Awesome -->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.css">
 
 <script defer src="{{ "/js/main.js" | relURL }}"></script>
 
 <!-- Main CSS file based on Pure blog layout -->
-{{ if .Site.Params.codeBlocksDark }}
+{{ if and (isset .Site.Params "codeblocksdark") .Site.Params.codeBlocksDark  }}
     {{ $codeoptions := (dict "targetPath" "/css/highlight-dark.min.css" "outputStyle" "compressed" "enableSourceMap" true) }}
     {{ $style := resources.Get "scss/highlight-dark.scss" | resources.ToCSS $codeoptions }}
     

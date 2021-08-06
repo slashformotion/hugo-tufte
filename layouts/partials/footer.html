@@ -1,9 +1,59 @@
 <footer class="page-footer">
 		<hr>
 		<ul class="page-footer-menu">
-		{{ range .Site.Menus.footer }}
-      <li><a href="{{.URL}}">{{.Pre }}{{ .Name }}</a></li>
-		{{ end }}
+
+      {{/* SOCIALS */}}
+      {{ if isset .Site.Params "twitter" }}
+      <li><a href="https://twitter.com/{{.Site.Params.twitter}}"><i class='fab fa-twitter fa-lg'></i></a></li>
+      {{ end }}
+
+      {{ if isset .Site.Params "github" }}
+      <li><a href="https://github.com/{{.Site.Params.github}}"><i class='fab fa-github fa-lg'></i></a></li>
+      {{ end }}
+
+      {{ if isset .Site.Params "gitlab" }}
+      <li><a href="https://gitlab.com/{{.Site.Params.gitlab}}"><i class='fab fa-gitlab fa-lg'></i></a></li>
+      {{ end }}
+
+      {{ if isset .Site.Params "patreon" }}
+      <li><a href="https://www.patreon.com/{{.Site.Params.patreon}}"><i class='fab fa-patreon la-lg'></i></a></li>
+      {{ end }}
+
+      {{ if isset .Site.Params "youtube" }}
+      <li><a href="https://www.youtube.com/{{.Site.Params.youtube}}"><i class='fab fa-youtube la-lg'></i></a></li>
+      {{ end }}
+
+      {{ if isset .Site.Params "medium" }}
+      <li><a href="https://medium.com/{{.Site.Params.medium}}"><i class='fab fa-medium la-lg'></i></a></li>
+      {{ end }}
+
+      {{ if isset .Site.Params "reddit" }}
+      <li><a href="https://www.reddit.com/user/{{.Site.Params.reddit}}"><i class='fab fa-reddit la-lg'></i></a></li>
+      {{ end }}
+
+      {{ if isset .Site.Params "stackoverflow" }}
+      <li><a href="https://stackoverflow.com/users/{{.Site.Params.stackoverflow}}?tab=profile"><i class='fab fa-stack-overflow la-lg'></i></a></li>
+      {{ end }}
+
+      {{ if isset .Site.Params "instagram" }}
+      <li><a href="https://www.instagram.com/{{.Site.Params.instagram}}"><i class='fab fa-instagram la-lg'></i></a></li>
+      {{ end }}
+
+      {{ if isset .Site.Params "mastodon" }}
+      <li><a href="https://{{.Site.Params.mastodon}}"><i class='fab fa-mastodon la-lg'></i></a></li>
+      {{ end }}
+
+      {{ if isset .Site.Params "orcid" }}
+      <li><a href="https://orcid.org/{{.Site.Params.orcid}}"><i class='fab fa-orcid la-lg'></i></a></li>
+      {{ end }}
+
+      {{ if isset .Site.Params "google_scholar" }}
+      <li><a href="https://scholar.google.com/citations?user={{.Site.Params.google_scholar}}"><i class='fas fa-graduation-cap la-lg'></i></a></li>
+      {{ end }}
+      {{/* END SOCIALS */}}
+      {{ range .Site.Menus.footer }}
+        <li><a href="{{.URL}}">{{.Pre }} {{ .Name }}</a></li>
+      {{ end }}
 		</ul>
 
   {{ if .Site.Params.showPoweredBy}}

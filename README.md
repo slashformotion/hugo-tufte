@@ -55,6 +55,24 @@ The site specific parameters that this theme recognizes are:
 - `katex` boolean: if "katex" is set to true katex will be used to render LaTex, if not MathJax will be used instead
 - `codeBlocksDark` boolean: if true, code blocks will use a dark theme.
 
+***Socials***
+
+You can add links to your social media profile by using thoses parameters:
+- `github`: string
+- `gitlab`: string
+- `twitter`: string
+- `patreon`: string
+- `youtube`: string
+- `medium`: string
+- `reddit`: string
+- `stackoverflow`: string
+- `instagram`: string
+- `mastodon`: string
+- `orcid`: string
+- `google_scholar`: string
+
+Please see [`exampleSite/config.toml`](https://github.com/slashformotion/hugo-tufte/blob/master/exampleSite/config.toml#L30) to see the full implementation with exemples.
+
 ### Page Parameters
 
 - `hideDate` boolean: if true, do not display a page date.  When `meta` is set to

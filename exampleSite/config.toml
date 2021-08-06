@@ -25,6 +25,22 @@ katex = false
   # Uncomment for dark code blocks
   # codeBlocksDark = true
 
+  # Common social website links, please comment the unused ones.
+  ## (if your favorite one is not in the list, please head to the footer menu below and add an entry)
+  ### Please note that some of the value below are only provided as an exemple, perhaps the computed isn't valid
+  github = "slashformotion"
+  gitlab = "slashformotion"
+  twitter = "slashformotion"
+  patreon = ""
+  youtube = "user/ChromeDevelopers" # check the end of your youtube url https://www.youtube.com/<copy_this>
+  medium = "slashformotion"
+  reddit = "Slashformotion"
+  stackoverflow = "16609732/slashformotion"
+  instagram = "google"
+  mastodon = "instance.url/@username"
+  orcid = "0000-0003-0634-3275"
+  google_scholar = "jm5QaHkAAAAJ"
+
 [taxonomies]
   category = "categories"
   series = "series"
@@ -34,44 +50,47 @@ katex = false
 # -----------------------------------------------------------------------
 [[menu.nav]]
   name = "Home"
-  pre = "<i class='fa fa-home fa-lg'></i> "
+  pre = "<i class='fas fa-home la-lg'></i>"
   weight = -110 
   identifier = "home"
   url = "/"
 [[menu.nav]]
   name = "Posts"
-  pre = "<i class='fa fa-book fa-lg'></i> "
+  pre = "<i class='fas fa-book fa-lg'></i> "
   weight = -100 
   identifier = "posts"
   url = "/post"
 [[menu.nav]]
   name = "Categories"
-  pre = "<i class='fa fa-tags fa-lg'></i> "
+  pre = "<i class='fas fa-tags fa-lg'></i> "
   weight = -90 
   identifier = "categories"
   url = "/categories"
 [[menu.nav]]
   name = "About"
-  pre = "<i class='fa fa-info-circle  fa-lg'></i> "
+  pre = "<i class='fas fa-info-circle  fa-lg'></i> "
   weight = -80 
   identifier = "about"
   url = "/about"
-
-# -----------------------------------------------------------------------
-# Footer menu 
-# -----------------------------------------------------------------------
-[[menu.footer]]
-  name = ""
-  pre = "<i class='fa fa-github fa-2x'></i> "
-  weight = -100 
+[[menu.nav]]
+  name = "Source Code"
+  pre = "<i class='fas fa-github fa-lg'></i> "
+  weight = -70 
   identifier = "github"
   url = "https://github.com/slashformotion/hugo-tufte"
+
+# -----------------------------------------------------------------------
+# FOOTER MENU
+# If you need to add custom links to you footer: put them here. Be aware that this theme is using fontawesome. 
+# Please head to https://fontawesome.com/v4.7/icons/ to pick icons
+# -----------------------------------------------------------------------
+
 [[menu.footer]]
-  name = ""
-  pre = "<i class='fa fa-twitter fa-2x'></i> "
+  name = "Custom footer link"
+  pre = "<i class='fab fa-google fa-lg'></i> "
   weight = -90 
-  identifier = "twitter"
-  url = "https://twitter.com"
+  identifier = "custom_link"
+  url = "https://google.com"
 
 
 # Don't change the settings below

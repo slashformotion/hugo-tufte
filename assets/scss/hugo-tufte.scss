@@ -293,12 +293,13 @@ footer.page-footer ul.page-footer-menu {
 	/*text-align:center;*/
 	margin: 0;
 	padding: 0;
+    width: unset;
 }
 
 footer.page-footer ul.page-footer-menu li {
 	display: inline-block;
 	margin-right: 0.5rem;
-	font-size: 55%;
+	// font-size: 55%;
 }
 
 .copyright {
