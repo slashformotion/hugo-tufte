@@ -5,11 +5,9 @@ of this theme. One of them is $ \LaTeX $ via &lt;a href="https://katex.org/">Kat
 &lt;h2 id="a-bit-about-mathematics">A Bit About Mathematics&lt;/h2>
 &lt;div class="epigraph">
 &lt;blockquote>
-&lt;p>
-This is an example of an epigraph with some math
+&lt;p>This is an example of an epigraph with some math
 $ \mathbb N \subseteq \mathbb R $
-to start the beginning of a section.
-&lt;/p>
+to start the beginning of a section.&lt;/p>
 &lt;footer>
 Shawn O&amp;#39;Hare,
 &lt;cite>Math is Fun&lt;/cite>
