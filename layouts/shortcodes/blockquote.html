@@ -1,6 +1,6 @@
 <blockquote cite="{{ .Get "cite" }}">
   <p>
-    {{ .Inner }}
+    {{ .Inner | markdownify }}
   </p>
   <footer>{{ .Get "footer" }}</footer>
 </blockquote>
