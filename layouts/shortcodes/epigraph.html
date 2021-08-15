@@ -1,7 +1,7 @@
 <div class="epigraph">
 <blockquote>
 {{ $t := .Get "type" }}
-{{ if eq $t "compact"  }}{{ .Inner }}{{ else }}<p>{{ .Inner }}</p>{{ end }}
+{{ if eq $t "compact"  }}{{ .Inner | markdownify }}{{ else }}<p>{{ .Inner | markdownify }}</p>{{ end }}
 {{ if .IsNamedParams }}
 <footer>
 {{ with .Get "pre" }}{{ . }}{{ end }}
