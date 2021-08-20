@@ -1,0 +1,19 @@
+/* Content meta-data such as author, publication date, etc. */
+.content-meta {
+    display: block;
+    /*color: rgba(155, 155, 155, 1);*/
+    color: rgba(100, 105, 110, 1);
+    font-size: 1.1rem;
+    margin-top: 1em;
+}
+
+.content-meta .author {
+    /*color: rgb(90, 20, 55)*/
+    color: rgba(65, 70, 75, 1);
+}
+
+.post-avatar {
+    border-radius: 50px;
+    float: right;
+    margin-left: 1em;
+}

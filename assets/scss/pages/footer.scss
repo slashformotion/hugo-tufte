@@ -1,0 +1,46 @@
+/* Footer, but with a different name to avoid conflicts with tufte.css */
+footer.page-footer{
+    padding-top: 1em;
+    margin-top: 3em;
+    color: #aaa;
+    width: 95%;
+    max-width: 45rem;
+}
+footer.page-footer p {
+    font-size: 1.2rem;
+    margin: 0em;
+    /* light font looked odd on chrome */
+    /*font-weight: lighter;*/
+}
+footer.page-footer a {
+    color: rgba(65, 70, 75, 1);
+    text-decoration: none;
+    background: transparent;
+}
+footer.page-footer hr {
+    text-align: left;
+    margin-left: 0;
+    width: 100%;
+    border-color: rgba(250, 250, 250, 0.25);
+}
+
+footer.page-footer ul.page-footer-menu {
+	list-style: none;
+	display: block;
+	/*text-align:center;*/
+	margin: 0;
+	padding: 0;
+    width: unset;
+}
+
+footer.page-footer ul.page-footer-menu li {
+	display: inline-block;
+	margin-right: 0.5rem;
+	// font-size: 55%;
+}
+
+.copyright {
+}
+.copyright p {
+    font-size: 90%;
+}
