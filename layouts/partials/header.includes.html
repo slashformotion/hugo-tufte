@@ -30,8 +30,6 @@
     <link rel="stylesheet" href="{{ $codestyle.Permalink | relURL }}">
 {{ end }}
 
-<link rel="stylesheet" href="{{ "/css/tufte.css" | relURL }}">
-
 {{ $htoptions := (dict "targetPath" "/css/hugo-tufte.min.css" "outputStyle" "compressed" "enableSourceMap" true) }}
 {{ $htstyle := resources.Get "scss/hugo-tufte.scss" | resources.ToCSS $htoptions }}
 <link rel="stylesheet" href="{{ $htstyle.Permalink | relURL }}">
