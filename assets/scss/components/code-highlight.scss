@@ -1,0 +1,53 @@
+$ht-code-border-radius: .4em;
+.highlight {
+    width: 55%;
+    overflow-x: scroll;
+    border-radius: $ht-code-border-radius;
+    
+    &>div.chroma>table.lntable{
+        margin: $ht-code-border-radius 0 $ht-code-border-radius 0;
+        & td:first-of-type {
+            & span:not(& span>span) {
+                padding: 0 .75em 0 .5em;
+            }
+        }
+    }
+    &>.chroma>code {
+
+        width: max-content;
+        margin-top: .5em;
+        margin-bottom: .5em;
+        margin-left: .5em;
+        &>span.hl{
+            margin-left: -.5em;
+            padding-left: .5em;
+        }
+    }
+
+    .chroma .hl {
+        // border-radius: $ht-code-border-radius / 2;
+        display: block;
+    }
+    
+    &::-webkit-scrollbar {
+        border-radius: $ht-code-border-radius;
+        width: 10px;
+        height: 1rem;
+    }
+    &::-webkit-scrollbar-thumb {
+        border-radius: $ht-code-border-radius;
+    }
+}
+
+.highlight .lntable {
+    overflow: initial;
+}
+
+.highlight pre {
+    margin: 0;
+}
+
+.highlight pre code {
+    display: block;
+    font-size: 1rem;
+}

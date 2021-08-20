@@ -1,0 +1,114 @@
+/* ------------------------------------------------------------------------ */
+/* hugo-tufte.css */
+/* Contains extensions to the original tufte.css styles to */
+/* accomodate a blog-like site. */
+/* ------------------------------------------------------------------------ */
+
+@import url("https://fonts.googleapis.com/css2?family=Fira+Code:wght@351&display=swap");
+
+/* When setting the primary font stack, apply it to the Pure grid units along */
+/* with `html`, `button`, `input`, `select`, and `textarea`. Pure Grids use */
+/* specific font stacks to ensure the greatest OS/browser compatibility. */
+html,
+button,
+input,
+select,
+textarea,
+p,
+nav,
+section,
+article,
+header,
+footer,
+.pure-g [class*="pure-u"] {
+    font-family: "et-book", -apple-system, "San Francisco", "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell",
+        "Open Sans", "Helvetica Neue", "Lucida Grand", sans-serif;
+}
+
+p {
+    text-align: justify;
+}
+
+code {
+    font-family: "Fira Code", Consolas, "Liberation Mono", Menlo, Courier, monospace;
+    font-size: 1.125rem;
+    line-height: 1.6;
+}
+
+.sidenote,
+.marginnote {
+    margin-right: -55%;
+    width: 45%;
+}
+
+
+/* ------------------------------------------------------------------------ */
+/* Generic content, such as the index list pages */
+/* ------------------------------------------------------------------------ */
+
+/* Content Title styling.  This is mostly to avoid underlying links. */
+h1.content-title {
+    /*max-width: 50rem;*/
+}
+h1.content-title a:link,
+h1.content-title a:visited {
+    background: transparent;
+    text-decoration: none;
+    color: inherit;
+}
+h1.content-title a:hover,
+h1.content-title a:focus {
+    color: darkgray;
+}
+
+
+
+/* ------------------------------------------------------------------------ */
+/* Styling for listing pages. */
+/* ------------------------------------------------------------------------ */
+.list-page {
+    ul {
+        list-style-type: none;
+        margin: -0.25em;
+        width: 87.5%;
+        max-width: 45rem;
+    }
+    li {
+        margin: 0;
+        /*font-size: 95%;*/
+    }
+}
+.list-page .list-date {
+    display: inline;
+    font-size: 0.75em;
+    /* padding-right: 2em; */
+    /* margin-right: 2em; */
+}
+
+table:not(.lntable) {
+    margin-top: 1em;
+    font-size: 1.4rem;
+    width: auto; /* making booktabs style tables the unstyled default in case someone uses Markdown styling */
+    /* margin: 0 auto; */
+    /* border-spacing: 0px; */
+    border-top: 2px solid #111;
+    border-bottom: 2px solid #111;
+}
+
+table:not(.lntable) th,
+table:not(.lntable) td {
+    font-size: 1.25rem;
+    line-height: 1.71428571;
+}
+
+table:not(.lntable) td {
+    padding-right: 0.75em;
+}
+
+table.lntable {
+    td.lntd {
+        padding: 0em;
+    }
+    border-spacing: 0;
+    padding: 0;
+}
