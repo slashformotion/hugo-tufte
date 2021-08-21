@@ -13,7 +13,7 @@ title = "Hugo-tufte Theme Example Site"
 math = true
 # (If math is enabled) 
 ## if "katex" is set to true katex will be used to render LaTex, if not MathJax will be used instead
-katex = false
+katex = true
 
 [params]
   # Subtitle of the website

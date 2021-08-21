@@ -15,12 +15,10 @@
 <!-- Font Awesome -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.css">
 
-<script defer src="{{ "/js/main.js" | relURL }}"></script>
-
 {{ $htoptions := (dict "targetPath" "/css/hugo-tufte.min.css" "outputStyle" "compressed" "enableSourceMap" true) }}
 {{ $htstyle := resources.Get "scss/hugo-tufte.scss"| resources.ExecuteAsTemplate "main.scss" .  | resources.ToCSS $htoptions }}
 <link rel="stylesheet" href="{{ $htstyle.Permalink | relURL }}">
 
-<link rel="stylesheet" href="{{ "/css/hugo-tufte-override.css" | relURL }}">
+<link rel="stylesheet"  href="{{ "/css/hugo-tufte-override.css" | relURL }}">
 
 
