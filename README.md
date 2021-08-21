@@ -49,7 +49,7 @@ The site specific parameters that this theme recognizes are:
 - `copyrightHolder` string: Inserts the value in the default copyright notice.
 - `copyright` string: Custom copyright notice.
 - `math` boolean: Site wide kill switch for Latex support
-- `katex` boolean: if "katex" is set to true katex will be used to render LaTex, if not MathJax will be used instead
+- `katex` boolean: if "katex" is set to true katex will be used to render LaTex, if not MathJax will be used instead. (Set to `true` by default)
 - `codeBlocksDark` boolean: if true, code blocks will use a dark theme.
 
 ***Socials***
