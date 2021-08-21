@@ -17,21 +17,8 @@
 
 <script defer src="{{ "/js/main.js" | relURL }}"></script>
 
-<!-- Main CSS file based on Pure blog layout -->
-{{ if and (isset .Site.Params "codeblocksdark") .Site.Params.codeBlocksDark  }}
-    {{ $codeoptions := (dict "targetPath" "/css/highlight-dark.min.css" "outputStyle" "compressed" "enableSourceMap" true) }}
-    {{ $style := resources.Get "scss/highlight-dark.scss" | resources.ToCSS $codeoptions }}
-    
-    <link rel="stylesheet" href="{{ $style.Permalink | relURL }}">
-{{ else }}
-    {{ $codeoptions := (dict "targetPath" "/css/highlight-light.min.css" "outputStyle" "compressed" "enableSourceMap" true) }}
-    {{ $codestyle := resources.Get "scss/highlight-light.scss" | resources.ToCSS $codeoptions }}
-
-    <link rel="stylesheet" href="{{ $codestyle.Permalink | relURL }}">
-{{ end }}
-
 {{ $htoptions := (dict "targetPath" "/css/hugo-tufte.min.css" "outputStyle" "compressed" "enableSourceMap" true) }}
-{{ $htstyle := resources.Get "scss/hugo-tufte.scss" | resources.ToCSS $htoptions }}
+{{ $htstyle := resources.Get "scss/hugo-tufte.scss"| resources.ExecuteAsTemplate "main.scss" .  | resources.ToCSS $htoptions }}
 <link rel="stylesheet" href="{{ $htstyle.Permalink | relURL }}">
 
 <link rel="stylesheet" href="{{ "/css/hugo-tufte-override.css" | relURL }}">
