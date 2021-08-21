@@ -76,7 +76,7 @@ katex = false
   url = "/about"
 [[menu.nav]]
   name = "Source Code"
-  pre = "<i class='fas fa-github fa-lg'></i> "
+  pre = "<i class='fab fa-github fa-lg'></i> "
   weight = -70 
   identifier = "github"
   url = "https://github.com/slashformotion/hugo-tufte"
