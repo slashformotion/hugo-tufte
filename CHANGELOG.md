@@ -5,8 +5,13 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ## [Unreleased]
+
+## [0.2.0] - 2021-11-03
 ### Fixed 
 - Fixed Two deprecation warnings for _normalize-mixin.scss 
+
+### Changed
+- Replaced normalize.scss with a cdn link to normalize.css
 ## [0.1.2] - 2021-08-21
 ### Changed
 - There is no css files anymore, all the css is generated from scss, except for the hugo-tufte-override.css of course (70c7b91) [#15](https://github.com/slashformotion/hugo-tufte/issues/15)
@@ -35,6 +40,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Support for  mathematical typesetting (LaTex) support via [katex](https://katex.org/) or [MathJax](https://www.mathjax.org). 
 
 [Unreleased]: https://github.com/slashformotion/hugo-tufte/compare/v0.1.2...HEAD
+[0.1.2]: https://github.com/slashformotion/hugo-tufte/releases/tag/v0.2.0
 [0.1.2]: https://github.com/slashformotion/hugo-tufte/releases/tag/v0.1.2
 [0.1.1]: https://github.com/slashformotion/hugo-tufte/releases/tag/v0.1.1
 [0.1.0]: https://github.com/slashformotion/hugo-tufte/releases/tag/v0.1.0
