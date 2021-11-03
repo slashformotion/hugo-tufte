@@ -5,7 +5,8 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ## [Unreleased]
-
+### Fixed 
+- Fixed Two deprecation warnings for _normalize-mixin.scss 
 ## [0.1.2] - 2021-08-21
 ### Changed
 - There is no css files anymore, all the css is generated from scss, except for the hugo-tufte-override.css of course (70c7b91) [#15](https://github.com/slashformotion/hugo-tufte/issues/15)
