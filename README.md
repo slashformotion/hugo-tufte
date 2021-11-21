@@ -48,7 +48,7 @@ There currently seems to be some weirdness with other environments,
 such as the `aligned` environment (`align*` is not supported by katex).  These environments will render provided
 they are wrapped in `<p>` tags and blank lines.  The snippet below should
 render correctly.
-```
+```latex
 Let $G$ be a finite group with exponent $2$.  Then every element is
 an involution, hence for any $x$, $y$ in $G$ we have:
 
