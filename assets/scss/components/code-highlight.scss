@@ -3,7 +3,7 @@ $ht-code-border-radius: .4em;
     width: 55%;
     overflow-x: scroll;
     border-radius: $ht-code-border-radius;
-    
+
     &>div.chroma>table.lntable{
         margin: $ht-code-border-radius 0 $ht-code-border-radius 0;
         & td:first-of-type {
@@ -28,7 +28,7 @@ $ht-code-border-radius: .4em;
         // border-radius: $ht-code-border-radius / 2;
         display: block;
     }
-    
+
     &::-webkit-scrollbar {
         border-radius: $ht-code-border-radius;
         width: 10px;
@@ -36,6 +36,12 @@ $ht-code-border-radius: .4em;
     }
     &::-webkit-scrollbar-thumb {
         border-radius: $ht-code-border-radius;
+    }
+}
+
+@media screen and (max-width: 760px) {
+    .highlight {
+        width: 90%;
     }
 }
 
