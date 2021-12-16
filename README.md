@@ -1,6 +1,6 @@
 # Tufte Hugo Theme
 [![Contributor Covenant](https://img.shields.io/badge/Contributor%20Covenant-2.0-4baaaa.svg)](code_of_conduct.md)
-[![build github pages](https://github.com/slashformotion/hugo-tufte/actions/workflows/build-site.yml/badge.svg)](https://github.com/slashformotion/hugo-tufte/actions/workflows/build-site.yml)
+[![build github pages](https://github.com/slashformotion/hugo-tufte/actions/workflows/build-site-ghpages.yml/badge.svg)](https://github.com/slashformotion/hugo-tufte/actions/workflows/build-site-ghpages.yml)
 
 Hugo-Tufte is a minimalist blog-like theme for the
 [static site generator Hugo](https://gohugo.io) that
