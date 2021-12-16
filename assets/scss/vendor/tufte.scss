@@ -184,6 +184,10 @@ ul {
     -webkit-padding-end: 5%;
 }
 
+li  ul {
+    width: 100%;
+}
+
 li {
     padding: 0.5rem 0;
 }
