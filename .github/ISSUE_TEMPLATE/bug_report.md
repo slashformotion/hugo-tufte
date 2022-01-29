@@ -1,13 +1,13 @@
 ---
 name: Bug report
-about: Create a report to help us improve
+about: Create a report to help us improve this theme
 title: ''
 labels: triage
 assignees: ''
 
 ---
 
-## What version of Go are you using (`$ hugo version`)?
+## What version of Hugo are you using (`$ hugo version`)?
 
 ## What operating system and processor architecture are you using?
 
@@ -17,7 +17,7 @@ assignees: ''
 
 ## What did you see instead?
 
-## Optional (best if completed)
+## If you have a hugo log output, please paste it below.
 
 **To Reproduce**
 Steps to reproduce the behavior:
