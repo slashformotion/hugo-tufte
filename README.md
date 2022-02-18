@@ -2,7 +2,7 @@
 [![Contributor Covenant](https://img.shields.io/badge/Contributor%20Covenant-2.0-4baaaa.svg)](code_of_conduct.md)
 [![build github pages](https://github.com/slashformotion/hugo-tufte/actions/workflows/build-site-ghpages.yml/badge.svg)](https://github.com/slashformotion/hugo-tufte/actions/workflows/build-site-ghpages.yml)
 
-***I am developping the version 1 of this theme on the "redo" branch***
+***This theme isn't actively maintained, if you want a new feature please file a pull request.***
 
 Hugo-Tufte is a minimalist blog-like theme for the
 [static site generator Hugo](https://gohugo.io) that
