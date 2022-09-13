@@ -44,3 +44,12 @@ footer.page-footer ul.page-footer-menu li {
 .copyright p {
     font-size: 90%;
 }
+
+@media (prefers-color-scheme: dark) {
+    footer.page-footer {
+        color: rgba(150, 150, 150, 1);
+    }
+    footer.page-footer a {
+        color: rgba(190, 190, 190, 1);
+    }
+}

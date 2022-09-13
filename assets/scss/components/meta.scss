@@ -17,3 +17,12 @@
     float: right;
     margin-left: 1em;
 }
+
+@media (prefers-color-scheme: dark) {
+    .content-meta {
+        color: rgba(150, 150, 150, 1);
+    }
+    .content-meta .author {
+        color: rgba(190, 190, 190, 1);
+    }
+}
