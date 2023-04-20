@@ -1,4 +1,4 @@
-> ***This theme isn't maintained anymore, if you plan on forking it and maintaining a tufte inspired theme, please let me know i will put a link to your repo here.***
+> ***This theme isn't maintained anymore. Please use https://github.com/loikein/hugo-tufte, note that it is has been modified quite a bit but at least it is up to date.***
 
 # Tufte Hugo Theme
 [![Contributor Covenant](https://img.shields.io/badge/Contributor%20Covenant-2.0-4baaaa.svg)](code_of_conduct.md)
