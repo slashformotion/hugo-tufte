@@ -15,8 +15,5 @@
 @import "components/meta";
 
 // Look at this https://gohugo.io/hugo-pipes/resource-from-template/#readout
-{{ if and (isset .Site.Params "codeblocksdark") .Site.Params.codeBlocksDark  }}
-@import "syntax/highlight-dark.scss"
-{{ else }}
-@import "syntax/highlight-light.scss"
-{{ end }}
+@import "syntax/highlight-light.scss";
+@import "syntax/highlight-dark.scss";

@@ -30,3 +30,9 @@ nav.menu li a:focus {
     background: inherit;
     color: darkgray;
 }
+
+@media (prefers-color-scheme: dark) {
+    nav.menu li a {
+        color: rgba(190, 190, 190, 1);
+    }
+}

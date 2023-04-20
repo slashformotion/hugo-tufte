@@ -12,6 +12,7 @@
  * @author Zeno Rocha <hi@zenorocha.com>
  */
 
+@media (prefers-color-scheme: dark) {
  .highlight .hl { background-color: scale-color($ht-code-bgcolor, $lightness: 32%, $saturation: -40%) }
  .highlight  { background: $ht-code-bgcolor; color: #f8f8f2 }
  .highlight .c { color: #6272a4 } /* Comment */
@@ -89,3 +90,4 @@
  .highlight .vi { color: #8be9fd; font-style: italic } /* Name.Variable.Instance */
  .highlight .vm { color: #8be9fd; font-style: italic } /* Name.Variable.Magic */
  .highlight .il { color: #bd93f9 } /* Literal.Number.Integer.Long */
+}
